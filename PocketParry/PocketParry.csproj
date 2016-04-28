@@ -18,14 +18,19 @@
     <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="style\app.css" />
+    <Content Include="Assets\bunny.png" />
+    <Content Include="Scripts\pixi.min.js" />
+    <Content Include="Style\app.css" />
     <Content Include="index.html" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="script\app.ts" />
+    <TypeScriptCompile Include="Scripts\typings\custom.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\pixi\pixi.d.ts" />
+    <TypeScriptCompile Include="Scripts\app.ts" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="packages.config" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -33,9 +38,7 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="content\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
   </PropertyGroup>
