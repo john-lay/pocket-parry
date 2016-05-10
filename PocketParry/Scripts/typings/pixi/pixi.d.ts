@@ -297,6 +297,7 @@ declare module PIXI
         y: number;
         constructor(x: number, y: number);
         clone(): Point;
+        set(x, y): void;
     }
 
     export class Polygon implements IHitArea

@@ -12,7 +12,13 @@ declare module PIXI {
 
     export class loader
     {
+        static add(path: string): loader;
         static add(name: string, path: string): loader;
         load(func: Function): loader;
     }
-} 
+
+    export class extras
+    {
+        static MovieClip(frames: string[]): void;
+    }    
+}
