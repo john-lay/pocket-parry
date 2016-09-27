@@ -1,0 +1,131 @@
+﻿ {
+    "frames": {
+        "chunAttack0000.png": {
+            "frame": { "x": 0, "y": 0, "w": 70, "h": 70 },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 70, "h": 70 },
+            "sourceSize": { "w": 70, "h": 70 }
+        },
+        "chunAttack0001.png": {
+            "frame": { "x": 70, "y": 0, "w": 70, "h": 70 },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 70, "h": 70 },
+            "sourceSize": { "w": 70, "h": 70 }
+        },
+        "chunAttack0002.png": {
+            "frame": { "x": 140, "y": 0, "w": 70, "h": 70 },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 70, "h": 70 },
+            "sourceSize": { "w": 70, "h": 70 }
+        },
+        "chunAttack0003.png": {
+            "frame": { "x": 210, "y": 0, "w": 70, "h": 70 },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 70, "h": 70 },
+            "sourceSize": { "w": 70, "h": 70 }
+        },
+        "chunAttack0004.png": {
+            "frame": { "x": 280, "y": 0, "w": 70, "h": 70 },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 70, "h": 70 },
+            "sourceSize": { "w": 70, "h": 70 }
+        },
+        "chunAttack0005.png": {
+            "frame": { "x": 350, "y": 0, "w": 70, "h": 70 },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 70, "h": 70 },
+            "sourceSize": { "w": 70, "h": 70 }
+        },
+        "chunAttack0006.png": {
+            "frame": { "x": 420, "y": 0, "w": 70, "h": 70 },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 70, "h": 70 },
+            "sourceSize": { "w": 70, "h": 70 }
+        },
+        "chunHit0000.png": {
+            "frame": { "x": 0, "y": 70, "w": 70, "h": 70 },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 70, "h": 70 },
+            "sourceSize": { "w": 70, "h": 70 }
+        },
+        "chunHit0001.png": {
+            "frame": { "x": 70, "y": 70, "w": 70, "h": 70 },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 70, "h": 70 },
+            "sourceSize": { "w": 70, "h": 70 }
+        },
+        "chunTurnKick0000.png": {
+            "frame": { "x": 0, "y": 140, "w": 92, "h": 92 },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": { "x": 0, "y": -11, "w": 92, "h": 92 },
+            "sourceSize": { "w": 92, "h": 92 }
+        },
+        "chunTurnKick0001.png": {
+            "frame": { "x": 92, "y": 140, "w": 92, "h": 92 },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": { "x": 0, "y": -11, "w": 92, "h": 92 },
+            "sourceSize": { "w": 92, "h": 92 }
+        },
+        "chunTurnKick0002.png": {
+            "frame": { "x": 184, "y": 140, "w": 92, "h": 92 },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": { "x": 0, "y": -11, "w": 92, "h": 92 },
+            "sourceSize": { "w": 92, "h": 92 }
+        },
+        "chunTurnKick0003.png": {
+            "frame": { "x": 276, "y": 140, "w": 92, "h": 92 },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": { "x": 0, "y": -11, "w": 92, "h": 92 },
+            "sourceSize": { "w": 92, "h": 92 }
+        },
+        "chunTurnKick0004.png": {
+            "frame": { "x": 368, "y": 140, "w": 92, "h": 92 },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": { "x": 0, "y": -11, "w": 92, "h": 92 },
+            "sourceSize": { "w": 92, "h": 92 }
+        },
+        "chunTurnKick0005.png": {
+            "frame": { "x": 460, "y": 140, "w": 92, "h": 92 },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": { "x": 0, "y": -11, "w": 92, "h": 92 },
+            "sourceSize": { "w": 92, "h": 92 }
+        },
+        "chunTurnKick0006.png": {
+            "frame": { "x": 552, "y": 140, "w": 92, "h": 92 },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": { "x": 0, "y": -11, "w": 92, "h": 92 },
+            "sourceSize": { "w": 92, "h": 92 }
+        },
+        "chunTurnKick0007.png": {
+            "frame": { "x": 644, "y": 140, "w": 92, "h": 92 },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": { "x": 0, "y": -11, "w": 92, "h": 92 },
+            "sourceSize": { "w": 92, "h": 92 }
+        }
+    },
+    "meta": {
+        "app": "PocketParry",
+        "version": "1.0",
+        "image": "../Assets/sprites_960x720.png",
+        "format": "RGBA8888",
+        "size": { "w": 960, "h": 720 },
+        "scale": "1"
+    }
+}
