@@ -31,10 +31,10 @@
     <TypeScriptCompile Include="Scripts\chun.ts" />
     <TypeScriptCompile Include="Scripts\background.ts" />
     <TypeScriptCompile Include="Scripts\ken.ts" />
-    <TypeScriptCompile Include="Scripts\Models\ISprite.ts" />
+    <TypeScriptCompile Include="Scripts\main.ts" />
     <TypeScriptCompile Include="Scripts\typings\custom.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\pixi\pixi.d.ts" />
-    <TypeScriptCompile Include="Scripts\app.ts" />
+    <TypeScriptCompile Include="Scripts\stage.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

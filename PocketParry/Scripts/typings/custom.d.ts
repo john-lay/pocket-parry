@@ -20,5 +20,10 @@ declare module PIXI {
     export class extras
     {
         static MovieClip(frames: string[]): void;
-    }    
+    }
+
+    export class movieClip extends MovieClip
+    {
+        on(event:string, func: Function): void;
+    }
 }

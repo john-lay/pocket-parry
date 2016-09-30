@@ -1,65 +1,48 @@
-﻿/// <reference path="typings/pixi/pixi.d.ts" />
-/// <reference path="typings/custom.d.ts" />
-
-declare var Stage: PIXI.Container;
-
-// Declare a global variable for our sprite so that the animate function can access it.
-var ken: PIXI.DisplayObject = null;
+﻿declare var Stage: PIXI.Container;
 
 module PocketParryModule {
     'use strict';
 
-    export class Ken implements IKenSprite {
+    export var Ken: PIXI.movieClip;
 
-        //private id: string = 'bg';
-        private path: string = 'Scripts/ken_sprites.json';
-        private movie: PIXI.MovieClip;
+    PIXI.loader
+        .add('Scripts/ken_sprites.json')
+        .load(() => {
 
-        public CanParry: boolean;
+        // create an array of textures from an image path
+        var frames = [];        
 
-        draw = () => {
-            // load the texture we need
-            PIXI.loader
-                .add(this.path)
-                .load(this.onAssetLoad);
-        }
+        // add the neutral frame
+        frames.push(PIXI.Texture.fromFrame('ken0000.png'));
 
-        onAssetLoad = () => {
-            // create an array of textures from an image path
-            var frames = [];
-            
-            // add the neutral frame
-            frames.push(PIXI.Texture.fromFrame('ken0000.png'));
+        // add the parry frame
+        frames.push(PIXI.Texture.fromFrame('kenParry0001.png'));
 
-            // add the parry frame
-            frames.push(PIXI.Texture.fromFrame('kenParry0001.png'));
-            
-            // create a MovieClip (brings back memories from the days of Flash, right ?)
-            this.movie = new PIXI.extras.MovieClip(frames);
+        // create a MovieClip (brings back memories from the days of Flash, right ?)
+        Ken = new PIXI.extras.MovieClip(frames);
 
-            /*
-             * A MovieClip inherits all the properties of a PIXI sprite
-             * so you can change its position, its anchor, mask it, etc
-             */
-            this.movie.position.set(300, 500);
-            this.movie.scale.x = 3;
-            this.movie.scale.y = 3;
-            this.movie.anchor.set(0.5, 0.5);
-            this.movie.animationSpeed = 0.1;
+        /*
+        * A MovieClip inherits all the properties of a PIXI sprite
+        * so you can change its position, its anchor, mask it, etc
+        */
+        Ken.position.set(300, 500);
+        Ken.scale.x = 3;
+        Ken.scale.y = 3;
+        Ken.anchor.set(0.5, 0.5);
+        Ken.animationSpeed = 0.1;
 
-            if (this.CanParry) {
-                this.movie.play();
+        // make the mc interactive...
+        Ken.interactive = true;       
+
+        Ken.on("mousedown", () => {
+            console.log("click on ken...");
+            if (Ken.playing) {
+                Ken.stop();
             } else {
-                this.movie.stop();
-            }            
+                Ken.play();
+            }
+        });
 
-            Stage.addChild(this.movie);
-
-            //animate();
-            
-        }
-    }
+        Stage.addChild(PocketParryModule.Ken);
+    });
 }
-
-// instantiate the class and draw
-new PocketParryModule.Ken().draw();
