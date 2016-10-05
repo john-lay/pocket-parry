@@ -15,3 +15,28 @@ var animate = () => {
 };
 
 animate();
+
+
+var isParrying = false;
+document.body.onkeyup = (e) => {
+    
+    if (e.keyCode == 32) {
+        
+        if (isParrying) {
+            PocketParryModule.KenParry.stop();
+            PocketParryModule.KenParry.visible = false;
+
+            PocketParryModule.KenHit.visible = true;
+            PocketParryModule.KenHit.play();            
+        }
+        else {            
+            PocketParryModule.KenHit.stop();
+            PocketParryModule.KenHit.visible = false;
+
+            PocketParryModule.KenParry.visible = true;
+            PocketParryModule.KenParry.play();            
+        }
+
+        isParrying = !isParrying;        
+    }
+}

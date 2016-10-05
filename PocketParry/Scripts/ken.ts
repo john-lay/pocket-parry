@@ -3,7 +3,7 @@
 module PocketParryModule {
     'use strict';
 
-    export var Ken: PIXI.movieClip;
+    export var KenParry: PIXI.movieClip;
 
     PIXI.loader
         .add('Scripts/ken_sprites.json')
@@ -19,30 +19,30 @@ module PocketParryModule {
         frames.push(PIXI.Texture.fromFrame('kenParry0001.png'));
 
         // create a MovieClip (brings back memories from the days of Flash, right ?)
-        Ken = new PIXI.extras.MovieClip(frames);
+        KenParry = new PIXI.extras.MovieClip(frames);
 
         /*
         * A MovieClip inherits all the properties of a PIXI sprite
         * so you can change its position, its anchor, mask it, etc
         */
-        Ken.position.set(300, 500);
-        Ken.scale.x = 3;
-        Ken.scale.y = 3;
-        Ken.anchor.set(0.5, 0.5);
-        Ken.animationSpeed = 0.1;
+        KenParry.position.set(300, 500);
+        KenParry.scale.x = 3;
+        KenParry.scale.y = 3;
+        KenParry.anchor.set(0.5, 0.5);
+        KenParry.animationSpeed = 0.1;
 
         // make the mc interactive...
-        Ken.interactive = true;       
+        KenParry.interactive = true;       
 
-        Ken.on("mousedown", () => {
+        KenParry.on("mousedown", () => {
             console.log("click on ken...");
-            if (Ken.playing) {
-                Ken.stop();
+            if (KenParry.playing) {
+                KenParry.stop();
             } else {
-                Ken.play();
+                KenParry.play();
             }
         });
-
-        Stage.addChild(PocketParryModule.Ken);
+        
+        Stage.addChild(PocketParryModule.KenParry);
     });
 }

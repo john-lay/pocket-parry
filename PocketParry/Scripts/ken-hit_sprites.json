@@ -1,0 +1,33 @@
+﻿ {
+    "frames": {
+        "kenHit0000.png": {
+            "frame": { "x": 490, "y": 372, "w": 140, "h": 70 },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": { "x": -10, "y": 0, "w": 140, "h": 70 },
+            "sourceSize": { "w": 140, "h": 70 }
+        },
+        "kenHit0001.png": {
+            "frame": { "x": 630, "y": 372, "w": 140, "h": 70 },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": { "x": -10, "y": 0, "w": 140, "h": 70 },
+            "sourceSize": { "w": 140, "h": 70 }
+        },
+        "kenHit0002.png": {
+            "frame": { "x": 770, "y": 372, "w": 140, "h": 70 },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": { "x": -10, "y": 0, "w": 140, "h": 70 },
+            "sourceSize": { "w": 140, "h": 70 }
+        }
+    },
+    "meta": {
+        "app": "PocketParry",
+        "version": "1.0",
+        "image": "../Assets/sprites_960x720.png",
+        "format": "RGBA8888",
+        "size": { "w": 960, "h": 720 },
+        "scale": "1"
+    }
+}
