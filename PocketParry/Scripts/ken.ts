@@ -25,8 +25,8 @@ module PocketParryModule {
         * A MovieClip inherits all the properties of a PIXI sprite
         * so you can change its position, its anchor, mask it, etc
         */
-        KenParry.position.set(300, 500);
-        KenParry.scale.x = 3;
+        KenParry.position.set(700, 500);
+        KenParry.scale.x = -3;
         KenParry.scale.y = 3;
         KenParry.anchor.set(0.5, 0.5);
         KenParry.animationSpeed = 0.1;
